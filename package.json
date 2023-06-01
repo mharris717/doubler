@@ -8,29 +8,21 @@
     "node": ">= 14"
   },
   "scripts": {
-    "web": "ts-node src/web.ts",
-    "try": "ts-node src/main.ts",
-    "d": "ts-node src/diff/generate_diff_prompt.ts",
-    "g": "ts-node src/github.ts",
-    "bench": "ts-node src/benchmark.ts"
+    "test": "jest"
   },
   "devDependencies": {
+    "@jest/globals": "^29.5.0",
     "@types/express": "^4.17.17",
+    "@types/jest": "^29.5.2",
     "@types/node": "^18.15.11",
+    "jest": "^29.5.0",
     "prettier": "^2.8.7",
+    "ts-jest": "^29.1.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.2"
   },
   "dependencies": {
     "date-fns": "^2.29.3",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "llm-diff-benchmark": "^0.0.4",
-    "octokit": "^2.0.14",
-    "openai": "^3.2.1",
-    "redis": "^4.6.7",
-    "simple-git": "^3.17.0",
-    "tempy": "^3.0.0",
-    "zod": "^3.21.4"
+    "dotenv": "^16.0.3"
   }
 }

@@ -6,5 +6,5 @@ export class Doubler {
 
 function main() {
   const d = new Doubler();
-  console.log(d.double(7));
+  console.log(d.double("7"));
 }

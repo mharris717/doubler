@@ -1,3 +1,4 @@
+
 import { Doubler } from "./doubler";
 
 describe("Doubler", () => {
@@ -17,4 +18,11 @@ describe("Doubler", () => {
     // Assert
     expect(result).toBe(6);
   });
+  it("should throw error when tripling undefined", () => {
+    // Arrange
+    const d = new Doubler();
+    // Act and Assert
+    expect(() => d.triple(undefined)).toThrow();
+  });
 });
+

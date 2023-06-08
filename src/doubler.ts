@@ -1,10 +1,30 @@
-export class Doubler {
-  double(n: number): number {
-    return n * 2;
-  }
-}
 
-function main() {
-  const d = new Doubler();
-  console.log(d.double(7));
-}
+import { Doubler } from "./doubler";
+
+describe("Doubler", () => {
+  it("should double 2 to 4", () => {
+    // Arrange
+    const d = new Doubler();
+    // Act
+    const result = d.double(2);
+    // Assert
+    expect(result).toBe(4);
+  });
+  
+  it("should double 3 to 6", () => {
+    // Arrange
+    const d = new Doubler();
+    // Act
+    const result = d.double(3);
+    // Assert
+    expect(result).toBe(6);
+  });
+  
+  it("should throw an error when tripling 4", () => {
+    // Arrange
+    const d = new Doubler();
+    // Act + Assert
+    expect(() => d.triple(4)).toThrow();
+  });
+});
+

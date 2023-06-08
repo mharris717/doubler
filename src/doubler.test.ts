@@ -17,4 +17,15 @@ describe("Doubler", () => {
     // Assert
     expect(result).toBe(6);
   });
+  it("should not triple 2 to 6", () => {
+    // Arrange
+    const d = new Doubler();
+    // Act
+    const tripleMethod = () => {
+      d.triple(2);
+    };
+    // Assert
+    expect(tripleMethod).toThrow("triple is not a function");
+  });
 });
+

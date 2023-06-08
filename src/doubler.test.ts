@@ -1,3 +1,4 @@
+
 import { Doubler } from "./doubler";
 
 describe("Doubler", () => {
@@ -17,4 +18,13 @@ describe("Doubler", () => {
     // Assert
     expect(result).toBe(6);
   });
+  it("should triple 5 to 15", () => {
+    // Arrange
+    const d = new Doubler();
+    // Act
+    const result = d.triple(5);
+    // Assert
+    expect(result).toBe(15);
+  });
 });
+

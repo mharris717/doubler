@@ -17,4 +17,12 @@ describe("Doubler", () => {
     // Assert
     expect(result).toBe(6);
   });
+  it("should triple 2 to 6", () => {
+      // Arrange
+      const d = new Doubler();
+      // Act
+      // this is the nonexistent triple method - calling it should throw an error
+      expect(() => {d.triple(2)}).toThrow(); 
+  });
 });
+

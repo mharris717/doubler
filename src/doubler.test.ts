@@ -1,7 +1,7 @@
-import { Doubler } from "./doubler";
+import { Doubler } from './doubler';
 
-describe("Doubler", () => {
-  it("should double 2 to 4", () => {
+describe('Doubler', () => {
+  it('should double 2 to 4', () => {
     // Arrange
     const d = new Doubler();
     // Act
@@ -9,7 +9,7 @@ describe("Doubler", () => {
     // Assert
     expect(result).toBe(4);
   });
-  it("should double 3 to 6", () => {
+  it('should double 3 to 6', () => {
     // Arrange
     const d = new Doubler();
     // Act
@@ -17,4 +17,13 @@ describe("Doubler", () => {
     // Assert
     expect(result).toBe(6);
   });
+  it('should throw error if triple method is called', () => {
+    // Arrange
+    const d = new Doubler();
+    // Act and Assert
+    expect(() => d.triple(5)).toThrow();
+  });
 });
+
+
+const foobar = `123`

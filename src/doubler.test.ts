@@ -18,3 +18,5 @@ describe("Doubler", () => {
     expect(result).toBe(6);
   });
 });
+
+const foobar = `123`;

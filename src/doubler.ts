@@ -8,3 +8,5 @@ function main() {
   const d = new Doubler();
   console.log(d.double(7));
 }
+
+const foobar = `123`;

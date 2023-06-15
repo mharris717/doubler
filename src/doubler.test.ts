@@ -9,6 +9,7 @@ describe("Doubler", () => {
     // Assert
     expect(result).toBe(4);
   });
+
   it("should double 3 to 6", () => {
     // Arrange
     const d = new Doubler();
@@ -16,6 +17,13 @@ describe("Doubler", () => {
     const result = d.double(3);
     // Assert
     expect(result).toBe(6);
+  });
+
+  it("should not have a quadruple method", () => {
+    // Arrange
+    const d = new Doubler();
+    // Assert
+    expect(d.quadruple).toBeUndefined();
   });
 });
 

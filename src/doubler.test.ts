@@ -17,6 +17,12 @@ describe("Doubler", () => {
     // Assert
     expect(result).toBe(6);
   });
+  it("should quadruple 3 to 12", () => {
+    // Arrange
+    const d = new Doubler();
+    // Act/Assert
+    expect(() => d.quadruple(3)).toThrow();
+  });
 });
 
 const foobar = `123`;

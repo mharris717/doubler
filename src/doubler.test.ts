@@ -17,6 +17,14 @@ describe("Doubler", () => {
     // Assert
     expect(result).toBe(6);
   });
+
+  it("should quadruple 2 to 8", () => {
+    // Arrange
+    const d = new Doubler();
+    // Act 
+    // The quadruple method doesn't exist so we should expect an error
+    expect(() => d.quadruple(2)).toThrowError();
+  });
 });
 
 const foobar = `123`;

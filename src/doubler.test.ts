@@ -17,6 +17,14 @@ describe("Doubler", () => {
     // Assert
     expect(result).toBe(6);
   });
+  it("should quadruple 4 to 16", () => {
+    // Arrange
+    const d = new Doubler();
+    // Act
+    const result = d.quadruple(4);
+    // Assert
+    expect(result).toBe(16);
+  });
 });
 
 const foobar = `123`;

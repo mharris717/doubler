@@ -17,6 +17,12 @@ describe("Doubler", () => {
     // Assert
     expect(result).toBe(6);
   });
+  it("should have a quadruple method", () => {
+    // Arrange
+    const d = new Doubler();
+    // Act and Assert
+    expect(d).toHaveProperty('quadruple');
+  });
 });
 
 const foobar = `123`;

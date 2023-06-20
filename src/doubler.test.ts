@@ -5,7 +5,7 @@ describe("Doubler", () => {
     // Arrange
     const d = new Doubler();
     // Act
-    const result = d.double(2);
+    const result = d.double('2');
     // Assert
     expect(result).toBe(4);
   });
@@ -13,7 +13,7 @@ describe("Doubler", () => {
     // Arrange
     const d = new Doubler();
     // Act
-    const result = d.double(3);
+    const result = d.double('3');
     // Assert
     expect(result).toBe(6);
   });
@@ -21,7 +21,7 @@ describe("Doubler", () => {
     // Arrange
     const d = new Doubler();
     // Act
-    const result = d.quadruple(2);
+    const result = d.quadruple('2');
     // Assert
     expect(result).toBe(8);
   });
@@ -29,7 +29,7 @@ describe("Doubler", () => {
     // Arrange
     const d = new Doubler();
     // Act
-    const result = d.quadruple(3);
+    const result = d.quadruple('3');
     // Assert
     expect(result).toBe(12);
   });
